@@ -7,6 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#define KSHOWNUM 10
+#define KMARGIN 10
+#define FONT(x)  [UIFont systemFontOfSize:x]
+#define KWIDTH  [UIScreen mainScreen].bounds.size.width
+#define KHEIGHT [UIScreen mainScreen].bounds.size.height
+#define PATHNAME [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"Message.plist"]
+
+#define COLOR1 [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0]
+#define COLOR2 [UIColor colorWithRed:205/255.0 green:205/255.0 blue:205/255.0 alpha:1.0]
 
 @interface THMessageCellModel : NSObject
 

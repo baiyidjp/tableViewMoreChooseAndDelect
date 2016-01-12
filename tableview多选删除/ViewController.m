@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "THMessageController.h"
-#import "UIColor+Extension.h"
+#define COLOR3 [UIColor colorWithRed:37/255.0 green:152/255.0 blue:249/255.0 alpha:1.0]
 @interface ViewController ()
 
 @end
@@ -21,7 +21,8 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc]init];
     backItem.title = @"";
     self.navigationItem.backBarButtonItem = backItem;
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"2598f9"]];
+    //设置导航栏的文字和背景颜色
+    [self.navigationController.navigationBar setBarTintColor:COLOR3];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 }

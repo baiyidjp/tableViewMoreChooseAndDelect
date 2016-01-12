@@ -19,9 +19,6 @@
 		0CBFA07E1C44DBDD009076F7 /* THMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA07A1C44DBDD009076F7 /* THMessageCell.m */; };
 		0CBFA07F1C44DBDD009076F7 /* THMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFA07B1C44DBDD009076F7 /* THMessageCell.xib */; };
 		0CBFA0801C44DBDD009076F7 /* THMessageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA07D1C44DBDD009076F7 /* THMessageCellModel.m */; };
-		0CBFA0831C44E43A009076F7 /* UIView+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0821C44E43A009076F7 /* UIView+XL.m */; };
-		0CBFA0861C44E44E009076F7 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0851C44E44E009076F7 /* UIColor+Extension.m */; };
-		0CBFA0891C44E494009076F7 /* NSString+Extonsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0881C44E494009076F7 /* NSString+Extonsion.m */; };
 		0CBFA08E1C44E73A009076F7 /* xiaoxi_weixuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFA08A1C44E73A009076F7 /* xiaoxi_weixuanze@2x.png */; };
 		0CBFA08F1C44E73A009076F7 /* xiaoxi_weixuanze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFA08B1C44E73A009076F7 /* xiaoxi_weixuanze@3x.png */; };
 		0CBFA0901C44E73A009076F7 /* xiaoxi_yixuanze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFA08C1C44E73A009076F7 /* xiaoxi_yixuanze@2x.png */; };
@@ -69,12 +66,6 @@
 		0CBFA07B1C44DBDD009076F7 /* THMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THMessageCell.xib; sourceTree = "<group>"; };
 		0CBFA07C1C44DBDD009076F7 /* THMessageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMessageCellModel.h; sourceTree = "<group>"; };
 		0CBFA07D1C44DBDD009076F7 /* THMessageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMessageCellModel.m; sourceTree = "<group>"; };
-		0CBFA0811C44E43A009076F7 /* UIView+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XL.h"; sourceTree = "<group>"; };
-		0CBFA0821C44E43A009076F7 /* UIView+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XL.m"; sourceTree = "<group>"; };
-		0CBFA0841C44E44E009076F7 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
-		0CBFA0851C44E44E009076F7 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
-		0CBFA0871C44E494009076F7 /* NSString+Extonsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extonsion.h"; sourceTree = "<group>"; };
-		0CBFA0881C44E494009076F7 /* NSString+Extonsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extonsion.m"; sourceTree = "<group>"; };
 		0CBFA08A1C44E73A009076F7 /* xiaoxi_weixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiaoxi_weixuanze@2x.png"; sourceTree = "<group>"; };
 		0CBFA08B1C44E73A009076F7 /* xiaoxi_weixuanze@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiaoxi_weixuanze@3x.png"; sourceTree = "<group>"; };
 		0CBFA08C1C44E73A009076F7 /* xiaoxi_yixuanze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiaoxi_yixuanze@2x.png"; sourceTree = "<group>"; };
@@ -176,12 +167,6 @@
 				0CBFA08B1C44E73A009076F7 /* xiaoxi_weixuanze@3x.png */,
 				0CBFA08C1C44E73A009076F7 /* xiaoxi_yixuanze@2x.png */,
 				0CBFA08D1C44E73A009076F7 /* xiaoxi_yixuanze@3x.png */,
-				0CBFA0871C44E494009076F7 /* NSString+Extonsion.h */,
-				0CBFA0881C44E494009076F7 /* NSString+Extonsion.m */,
-				0CBFA0841C44E44E009076F7 /* UIColor+Extension.h */,
-				0CBFA0851C44E44E009076F7 /* UIColor+Extension.m */,
-				0CBFA0811C44E43A009076F7 /* UIView+XL.h */,
-				0CBFA0821C44E43A009076F7 /* UIView+XL.m */,
 				0CBFA0791C44DBDD009076F7 /* THMessageCell.h */,
 				0CBFA07A1C44DBDD009076F7 /* THMessageCell.m */,
 				0CBFA07B1C44DBDD009076F7 /* THMessageCell.xib */,
@@ -334,9 +319,6 @@
 				0CBFA04A1C44DA8A009076F7 /* ViewController.m in Sources */,
 				0CBFA0781C44DB58009076F7 /* THMessageController.m in Sources */,
 				0CBFA07E1C44DBDD009076F7 /* THMessageCell.m in Sources */,
-				0CBFA0861C44E44E009076F7 /* UIColor+Extension.m in Sources */,
-				0CBFA0891C44E494009076F7 /* NSString+Extonsion.m in Sources */,
-				0CBFA0831C44E43A009076F7 /* UIView+XL.m in Sources */,
 				0CBFA0471C44DA8A009076F7 /* AppDelegate.m in Sources */,
 				0CBFA0441C44DA8A009076F7 /* main.m in Sources */,
 				0CBFA0801C44DBDD009076F7 /* THMessageCellModel.m in Sources */,

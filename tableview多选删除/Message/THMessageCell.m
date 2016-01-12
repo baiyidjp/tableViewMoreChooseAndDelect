@@ -8,8 +8,8 @@
 
 #import "THMessageCell.h"
 #import "THMessageCellModel.h"
-#import "NSString+Extonsion.h"
-#import "THMessageController.h"
+//#import "NSString+Extonsion.h"
+
 @implementation THMessageCell
 
 + (CGFloat)returnCellHeightWithModel:(THMessageCellModel *)model{

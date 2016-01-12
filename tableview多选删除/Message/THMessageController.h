@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define KSHOWNUM 10
-#define KMARGIN 10
-#define FONT(x)  [UIFont systemFontOfSize:x]
-#define KWIDTH  [UIScreen mainScreen].bounds.size.width
-#define KHEIGHT [UIScreen mainScreen].bounds.size.height
+
 @interface THMessageController : UIViewController
 
 @end

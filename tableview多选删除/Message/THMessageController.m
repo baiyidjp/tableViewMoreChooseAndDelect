@@ -9,10 +9,8 @@
 #import "THMessageController.h"
 #import "THMessageCell.h"
 #import "THMessageCellModel.h"
-#import "UIColor+Extension.h"
-#import "UIView+XL.h"
-#define PATHNAME [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"Message.plist"]
-
+//#import "UIColor+Extension.h"
+//#import "UIView+XL.h"
 
 @interface THMessageController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -49,6 +47,7 @@
     [self getModel];
     [self creatBottomView];
 }
+//获取假数据
 - (void)getModel{
     listArrayM = [NSMutableArray array];
     for (int i = 0; i < 20; i++) {
@@ -61,6 +60,7 @@
     }
     cellArrayM = [NSMutableArray array];
 }
+//底部工具View
 - (void)creatBottomView{
     bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, KHEIGHT, KWIDTH, 64)];
     bottomView.backgroundColor = [UIColor colorWithWhite:0.951 alpha:1.000];
@@ -92,7 +92,7 @@
     THMessageCellModel *model = listArrayM[indexPath.row];
     NSMutableArray *array = [NSMutableArray arrayWithContentsOfFile:PATHNAME];
     if ([array containsObject:[NSString stringWithFormat:@"%zd",model.messageid]]) {
-        cell.messageLabel.textColor = [UIColor colorWithHexString:@"cdcdcd"];
+        cell.messageLabel.textColor = COLOR2;
     }
     cell.messageLabel.text = model.messagedesc;
     cell.timeLabel.text = model.stringtime;
@@ -123,14 +123,14 @@
         self.title = @"编辑消息";
         self.navigationItem.leftBarButtonItem = chooseBtn;
         [UIView animateWithDuration:0.25 animations:^{
-            bottomView.y = KHEIGHT - 64;
+            bottomView.frame = CGRectMake(0, KHEIGHT-64, KWIDTH, 64);
         }];
     } else {
         [editBtn setTitle:@"编辑"];
         self.title = @"消息中心";
         isSelectLeftItem = NO;
         [UIView animateWithDuration:0.25 animations:^{
-            bottomView.y = KHEIGHT;
+            bottomView.frame = CGRectMake(0, KHEIGHT, KWIDTH, 64);
         }];
         self.navigationItem.leftBarButtonItem = nil;
         for (THMessageCell *cell in cellArrayM) {
@@ -175,6 +175,7 @@
         [myTableView reloadData];
     }
 }
+//删除
 - (void)clickDelect{
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"您确定删除么" message:nil preferredStyle:UIAlertControllerStyleAlert];
     [alertVC addAction:[UIAlertAction actionWithTitle:@"删除" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
@@ -189,6 +190,7 @@
     [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alertVC animated:YES completion:nil];
 }
+//全选
 - (void)clickHaveRead{
     for (THMessageCellModel *model in [listArrayM copy]) {
         NSMutableArray *array = [NSMutableArray arrayWithContentsOfFile:PATHNAME];
